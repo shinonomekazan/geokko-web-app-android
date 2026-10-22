@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             }
         }
 
-        myWebView.addJavascriptInterface(WebAppInterface(this), "AndroidBridge")
+        myWebView.addJavascriptInterface(WebAppInterface(this), "NativeBridge")
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
